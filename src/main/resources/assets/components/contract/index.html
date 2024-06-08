@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Contract Code</th>
+        <th>Description</th>
+        <th>Vendor</th>
+        <th>Contract Amount</th>
+        <th>Invoiced Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="contract in ContractsCtrl.contracts">
+        <td>{{ contract.code }}</td>
+        <td>{{ contract.description }}</td>
+        <td>{{ contract.vendor }}</td>
+        <td>{{ contract.contractAmount }}</td>
+        <td>{{ contract.invoicedAmount }}</td>
+    </tr>
+    </tbody>
+</table>
